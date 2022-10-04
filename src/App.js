@@ -1,10 +1,26 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import Project1 from "./pages/Project1";
+import Project2 from "./pages/Project2";
+import Project3 from "./pages/Project3";
+import Projetct4 from "./pages/Projetct4";
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello !</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projet-1" element={<Project1 />} />
+        <Route path="/projet-2" element={<Project2 />} />
+        <Route path="/projet-3" element={<Project3 />} />
+        <Route path="/projet-4" element={<Projetct4 />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 };
 
