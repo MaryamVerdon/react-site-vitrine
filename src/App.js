@@ -6,7 +6,7 @@ import NotFound from "./pages/NotFound";
 import Project1 from "./pages/Project1";
 import Project2 from "./pages/Project2";
 import Project3 from "./pages/Project3";
-import Projetct4 from "./pages/Projetct4";
+import Project4 from "./pages/Project4";
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
         <Route path="/projet-1" element={<Project1 />} />
         <Route path="/projet-2" element={<Project2 />} />
         <Route path="/projet-3" element={<Project3 />} />
-        <Route path="/projet-4" element={<Projetct4 />} />
+        <Route path="/projet-4" element={<Project4 />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
