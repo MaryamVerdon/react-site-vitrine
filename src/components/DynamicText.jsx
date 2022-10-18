@@ -38,7 +38,7 @@ const DynamicText = () => {
         }
       }, 80);
     };
-    loop();
+    //loop();
   }, []);
 
   return (
